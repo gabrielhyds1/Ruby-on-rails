@@ -42,8 +42,8 @@ namespace :dev do
   task add_default_user: :environment do
   User.create!(
     email: "admin@example.com",
-    password: "123456",
-    password_confirmation: "123456"
+    password: DEFAULT_PASSWORD,
+    password_confirmation: DEFAULT_PASSWORD
   )
   end
 
